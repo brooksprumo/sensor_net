@@ -21,19 +21,13 @@ meson build_dir && ninja -C build_dir
 To create multiple builds do:
 
 ```
-meson setup --buildtype=release --werror --optimization=3 build_release
+meson setup --buildtype=release build_release
 ```
 
 or
 
 ```
-meson setup --buildtype=debug --warnlevel=3 --optimization=g build_debug
-```
-
-or
-
-```
-meson setup --buildtype=debug -Db_sanitize=address build_sanitize
+meson setup --buildtype=debug build_debug
 ```
 
 ### Building and Testing

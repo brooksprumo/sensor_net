@@ -5,7 +5,10 @@ project(
     license: 'MIT',
     default_options: [
         'cpp_std=c++17',
+        'cpp_args=-march=native',
+        'cpp_link_args=-march=native',
         'warning_level=3',
+        'werror=true',
     ],
 )
 
